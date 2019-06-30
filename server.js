@@ -1,9 +1,9 @@
 var app = require('express')(); // Express App include
 var mysql = require('mysql'); // Mysql include
 var bodyParser = require("body-parser"); // Body parser for fetch posted data
-const ip = process.env.IP;
-const usr = process.env.USR;
-const pass = process.env.PASS;
+const ip = 127.17.0.2;//process.env.IP;
+const usr = 'daniel';//process.env.USR;
+const pass = 'daniel';//process.env.PASS;
 var connection = mysql.createConnection({ // Mysql Connection
     host : ip,
     user : usr,
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // Body parser use JSON data
 
 app.get('/', (req, res) => {
-    res.send('Hello world\n');
+    res.send('Probando si funciona esta cosa\n');
   });
 
 // fetch all users from users table in DB.
