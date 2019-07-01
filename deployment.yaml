@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: test
+  name: api
   namespace: entrega-final
 spec:
   progressDeadlineSeconds: 600
@@ -23,7 +23,7 @@ spec:
       containers:
       - image: jdgk27/proyecto2:api
         imagePullPolicy: Always
-        name: test
+        name: api
       dnsPolicy: ClusterFirst
       imagePullSecrets:
       - name: dockerhub
