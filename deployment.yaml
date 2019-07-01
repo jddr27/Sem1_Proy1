@@ -41,7 +41,7 @@ metadata:
     workload.cattle.io/workloadPortBased: "true"
   labels:
     cattle.io/creator: norman
-  name: nginx-loadbalancer
+  name: nginx-loadbalancer-api
   namespace: entrega-final
 spec:
   externalTrafficPolicy: Cluster

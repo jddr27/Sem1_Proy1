@@ -1,11 +1,8 @@
-FROM node:6
+FROM node
+WORKDIR /app
+ADD . /app
+RUN npm install
+ENV PORT=3000
+ENV IP="172.17.0.2"
 
-RUN mkdir -p /usr/api
-COPY . /usr/api
-WORKDIR /usr/api
-RUN npm install --production
-
-ENV PORT 3000
-EXPOSE  $PORT
-
-CMD ["npm", "start"]
+CMD ["node","server.js"]
