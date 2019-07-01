@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: jdgk27/proyecto2:api
       pushRemote: true
-      registry: text.docker.io
+      registry: test.docker.io
 - name: Crear en k8s
   steps:
   - applyYamlConfig:
