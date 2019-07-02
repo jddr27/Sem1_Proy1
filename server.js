@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // Body parser use JSON data
 
 app.get('/', (req, res) => {
-    res.send('Hello world\n');
+    res.send('Hello world!!!!!!!!!!!!!!!!!!!!!!!!\n');
   });
 
 // fetch all users from users table in DB.
